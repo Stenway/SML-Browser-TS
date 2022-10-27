@@ -1,0 +1,33 @@
+{
+  "name": "@stenway/sml-browser",
+  "version": "0.0.1",
+  "description": "Stefan John / Stenway / SimpleML.com / 2022",
+  "homepage": "https://www.simpleml.com",
+  "repository": "github:Stenway/SML-Browser-TS",
+  "bugs": {
+    "url": "https://github.com/Stenway/SML-Browser-TS/issues"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "simple markup language",
+    "markup language",
+    "xml",
+    "json",
+    "yaml"
+  ],
+  "author": "Stefan John",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@stenway/sml": "^0.0.2"
+  }
+}
