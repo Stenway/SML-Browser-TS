@@ -6,14 +6,14 @@ import { SmlDocument } from "@stenway/sml"
 
 export abstract class SmlDownload {
 	static getDownloadUrl(document: SmlDocument): string {
-		let bytes: Uint8Array = document.getBytes()
-		let blob: Blob = new Blob([bytes], { type: 'text/plain' })
+		const bytes: Uint8Array = document.getBytes()
+		const blob: Blob = new Blob([bytes], { type: 'text/plain' })
 		return URL.createObjectURL(blob)
 	}
 	
 	static download(wsvDocument: SmlDocument, fileName: string) {
 		const url = SmlDownload.getDownloadUrl(wsvDocument)
-		let element = document.createElement('a')
+		const element = document.createElement('a')
 		element.href = url
 		element.download = fileName
 		element.style.display = 'none'
