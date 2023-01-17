@@ -1,6 +1,6 @@
 {
   "name": "@stenway/sml-browser",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Stefan John / Stenway / SimpleML.com / 2023",
   "homepage": "https://www.simpleml.com",
   "repository": "github:Stenway/SML-Browser-TS",
@@ -37,6 +37,6 @@
     "typescript": "^4.8.4"
   },
   "dependencies": {
-    "@stenway/sml": "^0.2.0"
+    "@stenway/sml": "^0.3.0"
   }
 }
