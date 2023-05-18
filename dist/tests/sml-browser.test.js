@@ -1,13 +1,11 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const sml_1 = require("@stenway/sml");
-const src_1 = require("../src");
+import { SmlDocument } from "@stenway/sml";
+import { SmlDownload } from "../src/sml-browser.js";
 test("SmlDocument.getDownloadUrl", () => {
-    const document = sml_1.SmlDocument.parse("Test\nEnd");
-    src_1.SmlDownload.getDownloadUrl(document);
+    const document = SmlDocument.parse("Test\nEnd");
+    SmlDownload.getDownloadUrl(document);
 });
 test("SmlDocument.download", () => {
-    const document = sml_1.SmlDocument.parse("Test\nEnd");
-    expect(() => src_1.SmlDownload.download(document, "File.sml")).toThrowError();
+    const document = SmlDocument.parse("Test\nEnd");
+    expect(() => SmlDownload.download(document, "File.sml")).toThrowError();
 });
 //# sourceMappingURL=sml-browser.test.js.map

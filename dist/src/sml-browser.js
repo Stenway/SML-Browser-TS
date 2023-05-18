@@ -1,9 +1,6 @@
-"use strict";
 /* (C) Stefan John / Stenway / SimpleML.com / 2022 */
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.SmlDownload = void 0;
 // ----------------------------------------------------------------------
-class SmlDownload {
+export class SmlDownload {
     static getDownloadUrl(document) {
         const bytes = document.getBytes();
         const blob = new Blob([bytes], { type: 'text/plain' });
@@ -20,5 +17,4 @@ class SmlDownload {
         document.body.removeChild(element);
     }
 }
-exports.SmlDownload = SmlDownload;
 //# sourceMappingURL=sml-browser.js.map

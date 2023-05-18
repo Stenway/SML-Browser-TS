@@ -1,5 +1,5 @@
 ﻿import { SmlDocument } from "@stenway/sml"
-import { SmlDownload } from "../src"
+import { SmlDownload } from "../src/sml-browser.js"
 
 test("SmlDocument.getDownloadUrl", () => {
 	const document = SmlDocument.parse("Test\nEnd")
