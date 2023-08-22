@@ -2,7 +2,7 @@
 // ----------------------------------------------------------------------
 export class SmlDownload {
     static getDownloadUrl(document) {
-        const bytes = document.getBytes();
+        const bytes = document.toBytes();
         const blob = new Blob([bytes], { type: 'text/plain' });
         return URL.createObjectURL(blob);
     }

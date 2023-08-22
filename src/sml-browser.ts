@@ -6,7 +6,7 @@ import { SmlDocument } from "@stenway/sml"
 
 export abstract class SmlDownload {
 	static getDownloadUrl(document: SmlDocument): string {
-		const bytes: Uint8Array = document.getBytes()
+		const bytes: Uint8Array = document.toBytes()
 		const blob: Blob = new Blob([bytes], { type: 'text/plain' })
 		return URL.createObjectURL(blob)
 	}
