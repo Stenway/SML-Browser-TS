@@ -3,7 +3,7 @@
 export class SmlDownload {
     static getDownloadUrl(document) {
         const bytes = document.toBytes();
-        const blob = new Blob([bytes], { type: 'text/plain' });
+        const blob = new Blob([bytes], { type: 'application/sml' });
         return URL.createObjectURL(blob);
     }
     static download(wsvDocument, fileName) {

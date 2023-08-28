@@ -1,5 +1,9 @@
 ﻿# Changelog
 
+## 1.0.0
+- Readme update
+- Mime-type fix
+
 ## 0.8.0
 
 ## 0.7.0
