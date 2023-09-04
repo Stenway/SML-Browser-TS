@@ -1,6 +1,6 @@
 {
   "name": "@stenway/sml-browser",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "description": "SML helper methods for the browser environment",
   "homepage": "https://www.simpleml.com",
@@ -38,6 +38,6 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "@stenway/sml": "^1.0.0"
+    "@stenway/sml": "^1.1.0"
   }
 }
